@@ -7,7 +7,7 @@ sns.set_palette("coolwarm")
 
 
 
-gnr=pd.read_csv("/Users/mert/PycharmProjects/gameAnalyz/vgsales.csv")
+gnr=data=pd.read_csv("../vgsales.csv")
 
 genre_year = gnr.groupby(["Year", "Genre"]).size().unstack(fill_value=0)
 

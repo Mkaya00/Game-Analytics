@@ -8,7 +8,7 @@ import seaborn as sns
 sns.set_style("whitegrid")
 sns.set_palette("coolwarm")
 
-data=pd.read_csv("/Users/mert/PycharmProjects/gameAnalyz/vgsales.csv")
+data=pd.read_csv("../vgsales.csv")
 yearly_sales = data.groupby("Year")["Global_Sales"].sum()
 
 yearly_sales.plot(kind="line",figsize=(15,5),marker="o",color="darkblue")

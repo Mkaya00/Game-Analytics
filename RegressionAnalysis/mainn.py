@@ -6,7 +6,7 @@ import seaborn as sns
 sns.set_style("whitegrid")
 sns.set_palette("coolwarm")
 
-data=pd.read_csv("/Users/mert/PycharmProjects/gameAnalyz/vgsales.csv")
+data=pd.read_csv("../vgsales.csv")
 
 plt.figure(figsize=(10, 6))
 

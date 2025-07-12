@@ -1,7 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-df=pd.read_csv("/Users/mert/PycharmProjects/gameAnalyz/vgsales.csv")
+df=pd.read_csv("../vgsales.csv")
 df = df.dropna(subset=['Year'])
 df['Year'] = df['Year'].astype(int)
 

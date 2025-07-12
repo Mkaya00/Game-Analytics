@@ -7,7 +7,7 @@ sns.set_style("whitegrid")
 sns.set_palette("coolwarm")
 
 # Veri setini oku
-data = pd.read_csv("/Users/mert/PycharmProjects/gameAnalyz/vgsales.csv")
+data=pd.read_csv("../vgsales.csv")
 
 # Bölgesel satışların toplamını al
 regional_sales = data[["NA_Sales", "EU_Sales", "JP_Sales", "Other_Sales", "Global_Sales"]].sum()

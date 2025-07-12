@@ -6,8 +6,7 @@ sns.set_style("whitegrid")
 sns.set_palette("coolwarm")
 
 
-data = pd.read_csv("/Users/mert/PycharmProjects/gameAnalyz/vgsales.csv")
-
+data=pd.read_csv("../vgsales.csv")
 corr_matrix = data.corr(numeric_only=True)
 
 

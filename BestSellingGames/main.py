@@ -8,7 +8,7 @@ import seaborn as sns
 sns.set_style("whitegrid")
 sns.set_palette("coolwarm")
 
-data=pd.read_csv("/Users/mert/PycharmProjects/gameAnalyz/vgsales.csv")
+data=pd.read_csv("../vgsales.csv")
 top10 = data.groupby("Name")["Global_Sales"].sum().sort_values(ascending=False).head(10)
 
 top10.sort_values().plot(kind="barh",figsize=(15,5),edgecolor="black",align="center",color="red")

@@ -7,7 +7,7 @@ sns.set_style("whitegrid")
 sns.set_palette("coolwarm")
 
 
-data=pd.read_csv("/Users/mert/PycharmProjects/gameAnalyz/vgsales.csv")
+data=pd.read_csv("../vgsales.csv")
 data["Platform"].value_counts().sort_index().plot(kind="bar",figsize=(15,5),edgecolor="black",align="center")
 plt.title("Number Of Games By Platform",fontweight="bold")
 plt.xlabel("Platform",fontsize=13,fontweight="bold",labelpad=15)
